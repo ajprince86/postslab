@@ -1,0 +1,22 @@
+First thing we must do is install react-router in our terminal
+command = "npm install --save react-router-dom"
+move to the index.js file
+
+import {BrowserRouter as Router} from 'react-router-dom'
+
+We will then wrap it around the App component.
+This ensures that everything inside app will be able to use routing
+
+Head back to app.js
+Import {NavLink(Link),Route,Routes}from 'react-router-dom
+NavLink is customizable. It is a component for setting the URL and providing navigation between components without triggering a page refresh. We make it clickable by placing the "to" navigate to whatever endpoint.
+Wrap all NavLinks with a nav tag.
+Now we will use the Routes.Logic based on routes matching
+The parent (Routes) component Must wrap.
+Rendiring information based on our route.
+ Whenever the url ends with "/", Home component must be rendered.
+ Noticed i passed down the data from json to posts component as a prop
+Study Nested components
+wrote nested components for each individual post
+1:19 - Highlights
+
